@@ -45,7 +45,7 @@ public class FileServeController {
 
 
         // existing security header
-        headers.set("Content-Security-Policy", "frame-ancestors 'self' http://localhost:3000");
+        headers.set("Content-Security-Policy", "frame-ancestors 'self' http://localhost:3000 https://*.vercel.app");
 
         if ("html".equals(ext) || "htm".equals(ext)) {
 
